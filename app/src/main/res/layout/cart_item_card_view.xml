@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView_cartItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:cardCornerRadius="7dp"
+        app:cardElevation="7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/img_cardView_cartItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="fill"
+                android:layout_weight="40"
+                android:padding="10dp"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="60"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_cartView_cartItem_ProductName"
+                        style="@style/TextProduct"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Product Title" />
+
+                    <TextView
+                        android:id="@+id/tv_cartView_cartItem_PackageName"
+                        style="@style/TextProductDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Package" />
+
+                    <TextView
+                        android:id="@+id/tv_cartView_cartItem_Quantity"
+                        style="@style/TextProductDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Quantity" />
+
+                    <TextView
+                        android:id="@+id/tv_cartView_cartItem_Price"
+                        style="@style/TextProductDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs ####" />
+
+                    <TextView
+                        android:id="@+id/tv_cartView_cartItem_PriceTotal"
+                        style="@style/TextProductDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Rs ####" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/btn_cartView_cartItem_Edit"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        style="@style/ButtonSkyblue"
+                        android:text="Edit" />
+
+                    <Button
+                        android:id="@+id/btn_cartView_cartItem_Remove"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_margin="5dp"
+                        style="@style/ButtonRed"
+                        android:text="Remove" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

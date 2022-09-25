@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_products"
+            android:icon="@drawable/grocery"
+            android:title="Products" />
+        <item
+            android:id="@+id/nav_materials"
+            android:icon="@drawable/basket"
+            android:title="Raw Materials" />
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/presentation"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/envelope"
+            android:title="Contact Us" />
+        <item
+            android:id="@+id/nav_career"
+            android:icon="@drawable/businessman"
+            android:title="Career" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/app"
+                android:title="Profile" />
+
+            <item
+                android:id="@+id/nav_cart"
+                android:icon="@drawable/vector_drawable_cart___"
+                android:title="Cart" />
+
+            <item
+                android:id="@+id/nav_orders"
+                android:icon="@drawable/calendar"
+                android:title="Order History" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/exit"
+                android:title="Logout" />
+        </menu>
+    </item>
+
+</menu>
